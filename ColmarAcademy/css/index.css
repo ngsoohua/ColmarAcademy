@@ -1,0 +1,432 @@
+
+/*Common Styles*/
+
+*{
+    box-sizing:border-box;
+   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#989898;
+    font-size: 16px;
+}
+
+h1 { font-size: 30px;}
+h2 { font-size: 24px;}
+h3 { font-size: 22px;}
+h4 { font-size: 20px;}
+h5 { font-size: 18px;}
+
+
+h1, h2, h3, h4, h5 {
+    color: #4f4f4f;
+
+}
+
+.lightGrey{
+    color: #9f9b9b;
+}
+
+
+.darkGrey{
+    color: #01161E;
+}
+
+.backgroundLightGrey{
+    background-color: #9f9b9b;
+}
+
+/*Common Styles End*/
+
+
+/*Disable Mobile Content*/
+
+.headerMobile, .startLearningMobile{
+    display:none;
+}
+
+
+
+/*Header and Navbar Start*/
+header{
+    
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    height:64px;
+ 
+}
+
+header div{
+    display:flex;
+    align-items: center;
+}
+header img{
+    margin-left:24px;
+}
+
+
+
+nav{
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+nav a{
+    margin: 24px 16px;
+}
+
+/*Header and Navbar End*/
+
+
+/*Banner Start*/
+
+.banner{
+    width:100%;
+    background-color: #c4c2c2;
+    display:flex;
+    flex-direction: row;
+}
+
+.bannerContent{
+    width: 40%;
+}
+
+.bannerImageDiv {
+    width:60%;
+    margin: 24px 32px;
+
+}
+
+.bannerImageDiv img{
+
+    height:100%;
+    width: 100%;
+
+}
+
+.bannerContent{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bannerContent h1{
+    margin-bottom: 16px;
+ 
+}
+
+.bannerContent h4{
+    margin-bottom: 8px;
+ 
+}
+
+.bannerContent button{
+    width: 60%;
+    background-color: #515151;
+    color: white;
+
+}
+
+/*Banner End*/
+
+
+/*Info Main Start*/
+
+.infoMain{
+    width:100%;
+    margin: 32px 24px;
+
+    display: flex;
+
+}
+
+.infoMain>img{
+    object-fit: fill;
+    width: 60%;
+}
+
+.infoMainContent{
+    display:flex;
+    flex-direction: column;
+    margin-left: 24px;
+    width:40%;
+}
+
+.infoMainContent2 img{
+    height: auto;
+    width:35%;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.infoMainContent2{
+    display:flex;
+        
+}
+
+
+.infoMainContent2>div{
+    width: 65%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    margin:10px;
+}
+
+.infoMainContent2>div>h5 {
+        margin: 10px;
+}
+
+.infoMainContent2>div>a {
+    color:#4577bc;
+}
+
+
+.infoText{
+    margin: 32px 24px;
+
+}
+
+
+.infoText p{
+    margin: 24px 0px;
+
+}
+
+
+/*Info Main End*/
+
+
+/*Start Learning Start*/
+
+.startLearning{
+    background-color: #e1dfdf;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;    
+    margin: 0 auto;
+
+}
+
+.startLearning h2{
+    text-align: center;
+    margin: 32px 0;
+}
+
+.startLearning h4, h5, p{
+    margin-top: 16px;
+    margin-left: 16px;
+
+}
+
+.startLearningDetails img {
+    width: 100%;
+
+}
+
+.startLearningDetails div {
+    margin:32px;
+    width:25%;
+
+    background-color:white;
+
+}
+
+
+.startLearningDetails{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;    
+    margin: 0 72px;
+}
+
+/*Start Learning End*/
+
+
+
+/*Footer Start*/
+
+footer>h5{
+
+    font-size: 16px;
+    margin-left: 24px;
+    margin-top:32px;
+
+}
+
+
+/*Footer End*/
+
+
+
+/*Start of media for responsive design*/
+
+@media screen and (max-width: 720px) {
+
+ /*Navbar Mobile Start*/
+    header{
+        display:none;
+    
+    }
+    
+    .headerMobile{
+        width: 100%;
+        display: flex;
+        flex-basis: 64px;
+        justify-content: space-around;
+   
+    }
+    
+/*Navbar mobile End*/
+
+
+/*Banner Mobile Start*/
+    .banner{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .bannerContent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .bannerImageDiv {
+        width:100%;
+        /*margin: 24px 32px;*/
+    
+    }
+
+    .bannerContent h1{
+        margin-top: 32px;
+        margin-bottom: 16px;
+       
+    }
+
+    .bannerContent h4{
+        margin-bottom: 8px;
+       
+    }
+
+    .bannerContent button{
+        margin-bottom: 32px;
+       
+    }
+
+/*Banner Mobile End*/
+
+/*infomain Mobile start*/
+
+    .infoMain>img{
+        display:none;
+    }
+
+        
+    .infoMainContent{
+        display:flex;
+        flex-direction: column;
+         width:100%;
+         margin-right: 32px;
+
+    }
+    
+    .infoMainContent2 img{
+        height: auto;
+        width:100%;
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    
+    .infoMainContent2{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .infoMainContent2>div{
+        width: 100%;
+        
+    }
+    
+    
+
+    .infoText a{
+        margin-bottom: 32px;
+    
+    }
+    
+/*startLearning Mobile End*/
+
+    .startLearning{
+        display: none;
+    }
+
+
+    .startLearningMobile{
+        display: flex;
+        flex-direction: column;
+        
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .startLearningMobileDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .startLearningMobileDetails>div{
+        width: 100%; 
+        margin: 16px 72px;
+        text-align: center;
+    }
+
+/*Thesis Mobile Start*/
+
+    .thesisMainContent{
+        display:none;
+    }
+
+    .thesisMain video{
+        width:100%;
+
+    }
+
+    .thesisinfoText{
+        display:none;
+    }
+
+
+/*Thesis Mobile End*/
+
+/*footer Mobile start*/
+
+    footer{
+
+        Margin-top: 16px;
+
+    }
+
+
+/*footer Mobile End*/
+
+
+
+}/*end of media*/

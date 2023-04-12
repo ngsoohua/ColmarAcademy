@@ -1,3 +1,6 @@
+Singapore Generation : Full Stack Developer BootCamp CSS Assessment.
+Time_limit : 5 hours to complete.
+
 ●	What did you like about this project?
 It is a very realistic simulation of an actual project.
 
